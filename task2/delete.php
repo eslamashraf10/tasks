@@ -2,7 +2,7 @@
 
 include 'db.php';
 
-$id = 4; // ID of the customer to delete
+$id = 4;
 
 $delete = $conn->query("DELETE FROM customer WHERE id = $id");
 
