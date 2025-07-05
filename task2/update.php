@@ -2,13 +2,11 @@
 
 include 'db.php';
 
-// Example values to update
-$id = 2; // the ID of the customer you want to update
+$id = 2;
 $new_fname = 'Ahmed';
 $new_lname = 'Fayed';
 $new_age = 23;
 
-// SQL update query
 $update = $conn->query("UPDATE customer SET fname='$new_fname', lname='$new_lname', age=$new_age WHERE id=$id");
 
 if ($update) {
